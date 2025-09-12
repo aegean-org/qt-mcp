@@ -1,4 +1,4 @@
-<img width="964" height="714" alt="f280dfe738c10407bca3c9740d975a4d" src="https://github.com/user-attachments/assets/a2a120cd-4f4c-433e-876d-b9b2d3a101e1" /># 青提MCP使用指南
+# 青提MCP使用指南
 
 ## 项目简介
 
