@@ -19,7 +19,7 @@
 
 ### 下载程序
 
-前往项目的 [Releases 页面](https://github.com/your-repo/qt-mcp-server/releases) 下载最新的二进制包：
+前往项目的 [Releases 页面](https://github.com/aegean-org/qt-mcp/releases) 下载最新的二进制包：
 
 - **Windows**: 下载 `qt-mcp-windows.zip`
 - **macOS**: 下载 `qt-mcp-darwin.zip`  
