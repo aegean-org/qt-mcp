@@ -12,7 +12,7 @@
 - **笔记保存**: Markdown格式笔记管理系统
 
 ## 系统要求
-- 需安装青提学术，推荐 v2.5.0 及以上版本
+- 需安装[青提学术](https://www.inoteexpress.com/aegean/index.php/home/qt/index.html)，推荐 v2.5.0 及以上版本
 - 适用于Linux、macOS、Windows系统
 
 ## 快速上手指南
