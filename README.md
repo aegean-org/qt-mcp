@@ -54,9 +54,20 @@
 -   `"帮我查找一下我的青提学术里所有关于"人工智能"的文献"`
 -   `"获取青提学术“计算机”目录里的文献"`
 
+|功能点|示意图|
+| ------------ | ------------ |
+|功能说明|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/72964469-903b-4014-990f-5d692ebbb8de" />|
+|文献检索|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/2267a690-e3b7-4f0b-bfe0-a7e59cb4fa27" />|
+|元数据查看|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/54802719-fa4b-40ec-9062-e5ec44df0597" />|
+|全文读取|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/b6111983-32dd-47c5-b513-44c8f1a56e98" />|
+|基于全文信息进一步提问|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/9f84e2dd-f2bc-4dfc-b790-8313422c1300" />|
+|创建笔记|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/22f714f8-9dd7-4ee7-b1b3-151e0c8d1e1d" /><img width="1280" height="888" alt="image" src="https://github.com/user-attachments/assets/7f1065d4-1e9b-421b-ba71-8c192d309dd7" />|
+|创建文献|<img width="1280" height="810" alt="image" src="https://github.com/user-attachments/assets/828d85e0-9a51-4113-b890-cf2ccde44bd2" /><img width="1280" height="898" alt="image" src="https://github.com/user-attachments/assets/5fd41b21-9cd8-4d14-af33-89baea547eb1" />|
+
+
 #### 可用工具
 
-青提MCP提供以下4个核心工具：
+青提MCP提供以下5个核心工具：
 
 ### 1. noteExpressWeb_search_articles
 - **功能**: 按标题或作者搜索文献
