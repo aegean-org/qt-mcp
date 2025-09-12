@@ -17,21 +17,14 @@
 
 ## 快速上手指南
 
-### 下载程序
+### 下载程序解压安装
 
-前往项目的 [Releases 页面](https://github.com/aegean-org/qt-mcp/releases) 下载最新的二进制包：
-
-- **Windows**: 下载 `qt-mcp-windows.zip`
-- **macOS**: 下载 `qt-mcp-darwin.zip`  
-- **Linux**: 下载 `qt-mcp-linux.zip`
-
-### 解压安装
-
-将下载的压缩包解压到您选择的目录，例如：
+前往项目的 [Releases 页面](https://github.com/aegean-org/qt-mcp/releases) 下载最新的二进制包，例如：
 - **Windows**: 下载 `qt-mcp-windows-amd64.7z`
 - **macOS M芯片**: 下载 `qt-mcp-darwin-arm64.7z`
 - **macOS Intel芯片**: 下载 `qt-mcp-darwin-amd64.7z`
 - **Linux**: 下载 `qt-mcp-linux-amd64.7z`
+将下载的压缩包解压到您选择的目录。
 
 ### MCP客户端配置
 
