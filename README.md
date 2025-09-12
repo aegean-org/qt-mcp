@@ -1,4 +1,4 @@
-# 青提MCP使用指南
+<img width="964" height="714" alt="f280dfe738c10407bca3c9740d975a4d" src="https://github.com/user-attachments/assets/a2a120cd-4f4c-433e-876d-b9b2d3a101e1" /># 青提MCP使用指南
 
 ## 项目简介
 
@@ -28,9 +28,10 @@
 ### 解压安装
 
 将下载的压缩包解压到您选择的目录，例如：
-- Windows: `C:\Program Files\`
-- macOS: `~/Downloads/`
-- Linux: `/usr/local/bin/` 或 `~/bin/`
+- **Windows**: 下载 `qt-mcp-windows-amd64.7z`
+- **macOS M芯片**: 下载 `qt-mcp-darwin-arm64.7z`
+- **macOS Intel芯片**: 下载 `qt-mcp-darwin-amd64.7z`
+- **Linux**: 下载 `qt-mcp-linux-amd64.7z`
 
 ### MCP客户端配置
 
