@@ -24,6 +24,7 @@
 - **macOS M芯片**: 下载 `qt-mcp-darwin-arm64.7z`
 - **macOS Intel芯片**: 下载 `qt-mcp-darwin-amd64.7z`
 - **Linux**: 下载 `qt-mcp-linux-amd64.7z`
+
 将下载的压缩包解压到您选择的目录。
 
 ### MCP客户端配置
