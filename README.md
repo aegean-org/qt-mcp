@@ -19,19 +19,51 @@
 
 ## 快速上手指南
 
-### 下载程序解压安装
+### 给 CLI 工具自动安装
 
-前往项目的 [Releases 页面](https://github.com/aegean-org/qt-mcp/releases) 下载最新的二进制包，例如：
-- **Windows**: 下载 `qt-mcp-windows-amd64.7z`
-- **macOS M芯片**: 下载 `qt-mcp-darwin-arm64.7z`
-- **macOS Intel芯片**: 下载 `qt-mcp-darwin-amd64.7z`
-- **Linux**: 下载 `qt-mcp-linux-amd64.7z`
+如果您正在使用 Claude Code、Codex 等支持读取安装说明的 CLI 工具，可以直接复制下面这句话给工具，让它自行读取安装文档并配置 MCP：
 
-将下载的压缩包解压到您选择的目录。
+```text
+帮我安装青提 MCP，安装说明地址：
+https://raw.githubusercontent.com/aegean-org/qt-mcp/main/INSTALL.md
+```
 
-### MCP客户端配置
+### 手动安装
 
-在支持的AI客户端MCP中添加以下配置：
+如果您不想让 CLI 工具自动读取 `INSTALL.md`，也可以手动配置。手动安装分为两种方式，请先判断您的电脑是否已经安装了 Node.js。
+
+#### 方式 A：电脑已安装 Node.js
+
+先在终端执行以下命令检查：
+
+```bash
+node -v
+npx -v
+```
+
+如果两条命令都能正常输出版本号，说明您的电脑已经安装了 Node.js，可以直接使用 npm 包方式配置 MCP。
+
+### Claude Code
+
+已安装 Node.js 时，直接执行：
+
+```bash
+claude mcp add qt-mcp -- npx -y @aegean-org/qt-mcp stdio
+```
+
+### Codex CLI
+
+已安装 Node.js 时，直接执行：
+
+```bash
+codex mcp add qt-mcp -- npx -y @aegean-org/qt-mcp stdio
+```
+
+### 通用 MCP JSON 配置
+
+适用于使用 `mcpServers` 配置格式的客户端。
+
+已安装 Node.js 时：
 
 ```json
 {
@@ -40,8 +72,54 @@
       "name": "青提学术",
       "type": "stdio",
       "description": "学术论文管理和研究辅助工具",
-      "command": "/你的电脑目录/qt-mcp.exe", // 替换为实际路径
-      "args": []
+      "command": "npx",
+      "args": ["-y", "@aegean-org/qt-mcp", "stdio"]
+    }
+  }
+}
+```
+
+#### 方式 B：电脑未安装 Node.js
+
+如果执行 `node -v` 或 `npx -v` 提示命令不存在，说明您的电脑没有安装 Node.js。此时请使用二进制包方式安装。
+
+前往项目的 [Releases 页面](https://github.com/aegean-org/qt-mcp/releases) 下载最新的二进制包：
+- **Windows**: 下载 `qt-mcp-windows-amd64.7z`
+- **macOS M芯片**: 下载 `qt-mcp-darwin-arm64.7z`
+- **macOS Intel芯片**: 下载 `qt-mcp-darwin-amd64.7z`
+- **Linux**: 下载 `qt-mcp-linux-amd64.7z`
+
+将下载的压缩包解压到您选择的目录。
+
+### Claude Code
+
+未安装 Node.js 时，将命令改为本地二进制绝对路径：
+
+```bash
+claude mcp add qt-mcp -- /absolute/path/to/qt-mcp stdio
+```
+
+### Codex CLI
+
+未安装 Node.js 时，将命令改为本地二进制绝对路径：
+
+```bash
+codex mcp add qt-mcp -- /absolute/path/to/qt-mcp stdio
+```
+
+### 通用 MCP JSON 配置
+
+未安装 Node.js 时，将 `command` 改为本地二进制绝对路径，并将 `args` 改为 `["stdio"]`。
+
+```json
+{
+  "mcpServers": {
+    "青提mcp": {
+      "name": "青提学术",
+      "type": "stdio",
+      "description": "学术论文管理和研究辅助工具",
+      "command": "/absolute/path/to/qt-mcp",
+      "args": ["stdio"]
     }
   }
 }
